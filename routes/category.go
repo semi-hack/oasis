@@ -7,19 +7,19 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-var authRoutes = []endpoint{
+var categoryRoutes = []endpoint{
 	{
-		Path: "/login",
+		Path: "/",
 		Method: http.MethodPost,
 		Handlers: []gin.HandlerFunc{
-			controllers.Login,
+			controllers.CreateCategory,
 		},
 	},
 	{
-		Path: "/signup",
-		Method: http.MethodPost,
+		Path: "/",
+		Method: http.MethodGet,
 		Handlers: []gin.HandlerFunc{
-			controllers.Signup,
+			controllers.GetCategory,
 		},
 	},
 }

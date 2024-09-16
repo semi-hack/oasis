@@ -1,0 +1,5 @@
+/db
+/cmd
+sqlc.yaml
+Makefile
+/tmp

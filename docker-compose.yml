@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:14
+    restart: always
+    environment:
+      POSTGRES_USER: username
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: oasis
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "15232:5432"
+
+volumes:
+  db_data:
