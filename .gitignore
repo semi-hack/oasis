@@ -3,3 +3,4 @@
 sqlc.yaml
 Makefile
 /tmp
+.env
